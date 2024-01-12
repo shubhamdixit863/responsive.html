@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+         body{
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            
+        }
+
+        .menu a{
+            text-decoration: none;
+            color: #fff;
+            padding: 10px;
+            transition: background-color 0.3s;
+
+
+        }
+        .menu a:hover{
+            background-color: #555;
+        }
+
+        /* 1000 rs   , 100 rs ,200rs ,600rs ,999rs   */
+        /* max-width is the maximum screen size to which the css rule is applicable
+        any screensize between 0px to 600px
+        */
+        
+        @media only screen and (max-width:600px) {  /* @media only mediatype (all,print ,screen) */
+
+            /* Css rules*/
+            .menu{
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .menu a{
+                margin: 5px 0;
+            }
+            
+        }
+        /* 600px or greater than that ,700 ,800,900,10000*/
+
+         @media only screen and (min-width:600px) {  /* @media only mediatype (all,print ,screen) */
+           /*
+           body{
+            background-color: blue;
+           }
+           */
+            
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+
+        <a href="#">Services</a>
+
+        <a href="#">Contact</a>
+
+
+    </div>
+    
+</body>
+</html>
